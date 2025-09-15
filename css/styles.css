@@ -1,0 +1,55 @@
+/* Custom Properties */
+:root {
+  --white: #ffffff;
+  --black: #212121;
+  --grey: #757575;
+  --primary-color: #ffc107;
+  --secondary-color: #0097a7;
+}
+
+/* Global Styles */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Krub', sans-serif;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.8rem;
+}
+
+.title span {
+  font-size: 2rem;
+}
+
+/* Navigation */
+.nav-bg {
+  background-color: var(--secondary-color);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav a {
+  padding: 1rem;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main-nav a:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
+}
