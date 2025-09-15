@@ -108,32 +108,34 @@
       <!-- Contact Form -->
       <section>
         <h2>Contact</h2>
-        <form action="">
+        <form class="form" action="">
           <fieldset>
             <legend>Contact Me by Filling Out All the Fields</legend>
 
-            <div>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="Your Full Name" />
+            <div class="fields-container">
+              <div class="field">
+                <label for="name">Name</label>
+                <input class="field__input" type="text" id="name" name="name" required placeholder="Your Full Name" />
+              </div>
+
+              <div class="field">
+                <label for="phone">Your Telephone</label>
+                <input class="field__input" type="tel" id="phone" name="phone" required placeholder="(XXX) XXX-XXXX" />
+              </div>
+
+              <div class="field">
+                <label for="email">Your Email</label>
+                <input class="field__input" type="email" id="email" name="email" required placeholder="example@email.com" />
+              </div>
+
+              <div class="field">
+                <label for="message">Your Message</label>
+                <textarea class="field__input" id="message" name="message" required placeholder="Write your message here..."></textarea>
+              </div>
             </div>
 
-            <div>
-              <label for="phone">Your Telephone</label>
-              <input type="tel" id="phone" name="phone" required placeholder="(XXX) XXX-XXXX" />
-            </div>
-
-            <div>
-              <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" required placeholder="example@email.com" />
-            </div>
-
-            <div>
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
-            </div>
-
-            <div>
-              <input type="submit" value="Send Message" />
+            <div class="flex align-right">
+              <input class="button w-sm-100" type="submit" value="Send Message" />
             </div>
           </fieldset>
         </form>
