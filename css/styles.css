@@ -14,7 +14,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
 }
 
 .container {
@@ -38,7 +38,14 @@ body {
 
 .main-nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-nav a {
@@ -47,6 +54,7 @@ body {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .main-nav a:hover {
